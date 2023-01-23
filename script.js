@@ -3,14 +3,24 @@ $(document).ready(function () {
   $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
 });
 
-var inputAnswer = document.getElementById('hour-9')
-var buttonEl = document.getElementById("btn saveBtn col-2 col-md-1")
+var textArea9 = document.getElementById("text9")
+textArea9.value = localStorage.getItem('')
 
-buttonEl.addEventListener("save", saveToStorage())
+var textArea10 = document.getElementById('text10')
+textArea10.value = localStorage.getItem('task')
+
+var buttonEl = document.getElementById("nine")
+
+buttonEl.addEventListener("click", saveToStorage)
 
 function saveToStorage() {
-localStorage.setItem("task", inputAnswer.innerHTML);
+localStorage.setItem("task", inputAnswer.value);
 }
+
+var getitem = document.getElementById("text10")
+
+// function setStyles() {
+  // const currentColor = localStorage.getItem('bgcolor');
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
