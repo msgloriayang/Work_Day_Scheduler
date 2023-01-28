@@ -3,9 +3,32 @@ $(document).ready(function () {
   $('#currentDay').text(dayjs().format('dddd, MMMM D, YYYY'));
 });
 
-
 var textArea9 = document.getElementById("text9")
-textArea9.value = localStorage.getItem('Full Name')
+textArea9.value = localStorage.getItem('hour-9')
+
+var textArea9 = document.getElementById("text10")
+textArea9.value = localStorage.getItem('hour-10')
+
+var textArea9 = document.getElementById("text11")
+textArea9.value = localStorage.getItem('hour-11')
+
+var textArea9 = document.getElementById("text12")
+textArea9.value = localStorage.getItem('hour12')
+
+var textArea9 = document.getElementById("text1")
+textArea9.value = localStorage.getItem('hour-1')
+
+var textArea9 = document.getElementById("text2")
+textArea9.value = localStorage.getItem('hour-2')
+
+var textArea9 = document.getElementById("text3")
+textArea9.value = localStorage.getItem('hour-3')
+
+var textArea9 = document.getElementById("text4")
+textArea9.value = localStorage.getItem('hour-4')
+
+var textArea9 = document.getElementById("text5")
+textArea9.value = localStorage.getItem('hour-5')
 
 var buttonEl = $(".saveBtn");
 buttonEl.on("click", saveToStorage);
